@@ -132,7 +132,7 @@ module.exports = function (client) {
             .setImage("attachment://RankCard.png")
             .attachFiles(attachment)
           //send that embed
-          await message.channel.send(embed);
+          await message.channel.send(attachment);
           //delete that temp message
           await tempmsg.delete();
           return;
