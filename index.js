@@ -7,5 +7,5 @@ client.points = new Enmap({ name: "points" }); //For ranking system
 client.on("ready", ()=>console.log("READY"));  //log when the bot gets ready
 const leveling = require("./ranking");         //load the leveling file
 leveling(client);                              //call the leveling file with the client
-client.login(config.TOKEN);                    //start the bot with the bot token
+client.login(process.env.TOKEN);                    //start the bot with the bot token
 //Bot coded by Tomato#6966
